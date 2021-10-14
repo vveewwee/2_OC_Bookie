@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap');
+body{
+    font-family: Raleway;
+    margin-left:4%;
+    margin-right: 4%;;
+}
+/*
+div{
+    border: 1px solid black;
+}
+*/
+#header{
+    width:100%;
+    height:10%;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+}
+
+
+.logo{
+    float: left;
+    text-align: left;
+    padding-left: 2%;;
+}
+
+.logo img{
+    display:inline-block;
+    width:45%;
+}
+
+.nav{
+    display:flex;
+    width:50%;
+    justify-content:right;
+    padding:10px;
+    font-size: 14px;
+}
+
+nav a{
+    border-top: 1px solid transparent;
+    text-decoration: none;
+    color:grey;
+    margin-left: 20px;
+    padding-top: 10%;
+}
+
+.nav a:hover{
+    border-top: 1px solid #0065FC;
+    color: #0065FC;
+}
+
+.search p{
+    font-weight: lighter;
+}
+
+#recherche{
+    display: flex;
+    flex-flow: column;
+    flex-direction:row;
+}
+
+.loc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width:40px;
+    height:41px;
+    
+}
+
+input{
+    height:39px;
+    padding-top:2px;
+    border-style: none;
+    outline:1px solid #F2F2F2;
+}
+
+#search_but{
+    height: 40px;
+    font-size:medium;
+    background-color: #0065FC;
+    color:white;
+    margin-left:-5px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border:none;
+}
+
+#filters{
+    margin:10px;
+    display:flex;
+    flex-flow:row wrap;
+}
+
+#filters>*{
+    margin-left:10px;
+    margin-top:15px;
+    height:35px;
+    border:1px solid #ccc8c8;
+    border-radius: 45px;
+    border-left:0px;
+}
+
+#filters h4{
+    border:0px;
+    margin-top:25px;
+    margin-left: 5px;;
+}
+
+.search h6{
+    margin-top:-5px;
+    font-weight: lighter;
+    border: 0px;
+}
+
+h6 .info{
+
+    color:#0065FC;
+    border: 1px solid #F2F2F2;
+    border-radius: 45px;
+    width:14px;
+    height: 14px;
+    padding:3px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.icon {
+    padding: 10px;
+    color:#0065FC;
+    background:hsl(216, 100%, 94%);
+    max-width: 20px;
+    max-height:20px;
+    border-radius: 45px;
+    text-align: center;
+    margin-right:0px;
+  }
+
+#filters .word{
+    margin:2px;
+    margin-right:12px;
+    font-weight:bold;
+}
+
+#filters>div:hover {
+    color:#DEEBFF;
+    border-color: #0065FC;
+}
+
+main{
+    display: flex;
+}
+
+.heber{
+    width:65%;
+    height:auto;
+    /*border: 1px solid black;*/
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    display:inline-flex;
+    flex-flow:column nowrap;
+    padding:1%;
+}
+
+.card_holder{
+    max-width:100%;
+    max-height:340px;
+    display:flex;
+    flex-flow:row wrap;
+    align-content:flex-start;
+    justify-content:space-evenly;
+}
+.card{
+    max-width:25%;
+    max-height:40%;
+    display: flex;
+    flex-flow:column nowrap;
+    border:2px solid white;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 2px 2px 10px grey;
+    margin:2%;
+}
+
+.img_holder{
+    max-width:100%;
+    max-height:100%;
+    overflow:hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.photo_gallery{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.legend_holder{
+    width: 100%;
+    height: 40%;
+    font-size: 60%;
+    padding-left:5%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+.rating{
+}
+.blue{
+    color:#0065FC;
+}
+.grey{
+    color:grey;
+}
+.heber a{
+    text-decoration: none;
+    color:black;
+
+}
+/*
+.photo_gallery{
+    border:2px solid white;
+    border-radius: 10px;
+    width:110px;
+    height: 60px;
+    border-bottom:40px solid white;
+    box-shadow:2px 2px 20px rgb(216, 215, 215);
+    margin:10px;
+}
+/*
+.pop{
+    border: 1px solid black;
+    width:30%;
+    height:200px;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+}
+*/
+#act{
+    border: 1px solid black;
+    width:30%;
+    height:200px;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+}
+
+
+@media screen and (max-width: 600px){
+    .search{
+    }
+}

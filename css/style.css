@@ -42,7 +42,7 @@ nav a{
     text-decoration: none;
     color:grey;
     margin-left: 20px;
-    padding-top: 10%;
+    padding-top: 7%;
 }
 
 .nav a:hover{
@@ -77,6 +77,10 @@ input{
     padding-top:2px;
     border-style: none;
     outline:1px solid #F2F2F2;
+}
+
+.hidden{
+    display: none;
 }
 
 #search_but{
@@ -250,6 +254,68 @@ main{
 
 
 @media screen and (max-width: 600px){
-    .search{
+    body>*{
+        align-content: center;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #header{
+        max-width:100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        margin:0%;
+        padding:0%;
+        border:1px solid black;
+    }
+    .logo{
+        text-align: center;
+    }
+   
+    nav{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    nav a{
+        text-align: center;;
+        font-size:18px;
+        font-weight: lighter;
+        border-bottom: 2px solid #F2F2F2;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left:5%;
+    }
+    .nav a:hover{
+        border-bottom:2px solid #0065FC;
+        border-top:1px solid transparent;
+    }
+    #search_but{
+        display:none;
+    }
+    .hidden{
+        display:initial;
+    }
+    #recherche{
+        display: flex;
+        flex-flow: row nowrap;
+        width:80%;
+        
+    }
+    #hidden_but{
+        height: 40px;
+        width:40px;
+        align-items: center;
+        text-align: center;
+        object-fit: fill;
+        background-color: #0065FC;
+        border-color: #0065FC;
+        border-radius: 10px;
+        border-style: solid;
+    }
+    #hidden_but i{
+        color: white;
+        background: #0065FC;
+        
     }
 }

@@ -253,13 +253,19 @@ main{
 }
 
 .foot{
-    color:#F2F2F2;
+    width:100%;
+    height:auto;
+    background-color:#F2F2F2;
     display:flex;
     flex-flow: row nowrap;
 }
-.foot>div{
+.col{
+    width:30%;
+    height:100%;
+    padding:5%;
     display:flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
 }
 footer a{
     text-decoration: none;

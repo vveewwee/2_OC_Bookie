@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
 body{
     font-family: Raleway;
     margin:0;
@@ -62,8 +62,9 @@ nav{
 .main_container{
     margin-left:2%;
     margin-right:2%;
+    display:flex;
+    flex-direction: column;
 }
-
 
 #recherche{
     display: flex;
@@ -165,24 +166,25 @@ h6 .info{
 }
 
 main{
+    width:100%;
     display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
 }
-main>*{
-    margin:1%;
-}
+
 .heber{
-    width:65%;
+    width:58%;
     height:auto;
     border-radius: 15px;
     background-color: #F2F2F2;
-    display:inline-flex;
-    flex-flow:column nowrap;
-    padding:1%;
+    display:flex;
+    flex-flow:column wrap;
+    padding-left:2%;
 }
 
 .card_holder{
     max-width:100%;
-    max-height:340px;
+    height:280px;
     display:flex;
     flex-flow:row wrap;
     align-content:flex-start;
@@ -193,10 +195,10 @@ main>*{
     max-height:40%;
     display: flex;
     flex-flow:column nowrap;
-    border:2px solid white;
+    border:3px solid white;
     border-radius: 15px;
     background: white;
-    box-shadow: 2px 2px 10px grey;
+    box-shadow: 2px 2px 10px rgb(199, 195, 195);
     margin:2%;
 }
 
@@ -241,20 +243,9 @@ main>*{
     color:black;
 
 }
-/*
-.photo_gallery{
-    border:2px solid white;
-    border-radius: 10px;
-    width:110px;
-    height: 60px;
-    border-bottom:40px solid white;
-    box-shadow:2px 2px 20px rgb(216, 215, 215);
-    margin:10px;
-}
-*/
+
 .pop{
-    border: 1px solid black;
-    width:30%;
+    width:37%;
     border-radius: 15px;
     background-color: #F2F2F2;
 }
@@ -277,23 +268,24 @@ main>*{
 }
 
 .pop_card_holder{
-   
+   padding:2%;
+   height:100%;
+   display: flex;
+   flex-flow: column nowrap;
 }
 .pop_card{
-    max-width:90%;
-    max-height:20%;
     display: flex;
     flex-flow:row nowrap;
     border:2px solid white;
     border-radius: 15px;
     background: white;
-    box-shadow: 2px 2px 10px grey;
+    box-shadow: 2px 2px 10px rgb(199, 195, 195);
     margin:2%;
 }
 
 .pop_img_holder{
-    max-width:100%;
-    max-height:140px;
+    max-width:40%;
+    height:100px;
     overflow:hidden;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -322,12 +314,56 @@ main>*{
 }
 
 #act{
-    border: 1px solid black;
     width:100%;
-    height:200px;
+    height:360px;
     border-radius: 15px;
-    margin-left:1%;
-    margin-bottom:2%;
+    margin-bottom:1%;
+    margin-top: 1%;
+}
+
+.act_cont{
+    display:flex;
+    flex-flow: column wrap;
+    align-content:space-between;
+    justify-content: flex-start;
+    width:100%;
+    height:300px;
+}
+
+.act_card{
+    align-self:flex-start;
+    width:23%;
+    height:90%;
+    position:relative;
+    box-sizing:border-box;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgb(199, 195, 195);2px 2px 10px rgb(199, 195, 195);
+    margin:6px;
+}
+
+.act_card:nth-child(2), .act_card:nth-child(3),.act_card:nth-child(5),.act_card:nth-child(6){
+    height:43%;
+    padding-bottom:1%;
+}
+
+.act_img_holder{
+    width:100%;
+    height:90%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    overflow:hidden;
+}
+
+.act_leg{
+    background-color: white;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.act_leg>a{
+    text-decoration: none;
+    color:black;
 }
 
 footer{
@@ -460,27 +496,37 @@ footer a{
     }
 }
 
+
+
+
+
+
+
 .B22{
-    font-weight: bold;
+    font-weight: 600;
     font-size: 18px;
 }
 
 .B18{
-    font-weight: bold;
+    font-weight: 500;
     font-size: 12px;
 }
 
 .B16{
-    font-weight: bold;
+    font-weight: 500;
     font-size: 11px;
 }
 
+.B14{
+    font-weight: 500;
+    font-size: 10px;
+}
 .L16{
-    font-weight: lighter;
-    font-size: 11px;
+    font-weight: 200;
+    font-size: 11pt;
 }
 
 .L14{
-    font-weight: lighter;
+    font-weight: 200;
     font-size: 8pt;
 }

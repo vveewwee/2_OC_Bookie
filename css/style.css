@@ -9,11 +9,12 @@ div{
 }
 */
 #header{
-    width:100%;
+    width: 100%;
     height:10%;
     display:flex;
     flex-flow: row nowrap;
     justify-content:space-between;
+    margin-right:2%;
 }
 
 
@@ -21,29 +22,37 @@ div{
     float: left;
     text-align: left;
     padding-left: 2%;
-    padding-top:10px;
+    padding-top:2%;
+    margin-left:2%;
 }
 
 .logo img{
     display:inline-block;
-    width:45%;
+    width:40%;
 }
+
 nav{
     display:flex;
+    flex-flow:row nowrap;
+    width:100%;
+    justify-content:flex-end;
 }
+/*
 .nav{
     display:flex;
+    flex-flow:row nowrap;
     width:50%;
     justify-content:right;
     padding-right: 20px;
-}
+}*/
 
 .inside_nav{
     border-top: 2px solid transparent;
     display:flex;
     flex-flow:row nowrap;
-    padding-top:10px;
-    padding:10px;
+    padding-top:8px;
+    padding:20px;
+    margin-right:5%;
 }
 
 .inside_nav a{  
@@ -68,8 +77,8 @@ nav{
 
 #recherche{
     display: flex;
-    flex-flow: column;
-    flex-direction:row;
+    flex-flow: row nowrap;
+    align-items: baseline;
 }
 
 .loc{
@@ -77,18 +86,22 @@ nav{
     justify-content:center;
     align-items:center;
     background:#F2F2F2;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    width:40px;
-    height:41px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width:35px;
+    height:32px;
+    outline: 1px solid #F2F2F2;
     
 }
 
 input{
-    height:39px;
-    padding-top:2px;
+    height:32px;
+    padding-top:1px;
     border-style: none;
     outline:1px solid #F2F2F2;
+    width:160px;
+    font-size: 9pt;
+    font-weight: 300;;
 }
 
 .hidden{
@@ -96,32 +109,33 @@ input{
 }
 
 #search_but{
-    height: 40px;
-    font-size:medium;
+    width:95px;
+    height: 33px;
+    font-size: 9pt;
+    font-weight: 300;
     background-color: #0065FC;
     color:white;
     margin-left:-5px;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     border:none;
 }
 
-#filters{
-    margin:10px;
+.filters{
     display:flex;
     flex-flow:row wrap;
 }
 
-#filters>*{
-    margin-left:10px;
+.fil{
+    margin-left:15px;
     margin-top:15px;
-    height:35px;
+    height:30px;
     border:1px solid #ccc8c8;
-    border-radius: 45px;
+    border-radius: 50px;
     border-left:0px;
 }
 
-#filters h4{
+.filters h4{
     border:0px;
     margin-top:25px;
     margin-left: 5px;;
@@ -132,16 +146,25 @@ input{
     border: 0px;
 }
 
-h6 .info{
+.information{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
 
+.info{
     color:#0065FC;
     border: 1px solid #F2F2F2;
-    border-radius: 45px;
-    width:14px;
-    height: 14px;
+    border-radius: 30px;
+    width:10px;
+    height: 10x;
     padding:3px;
     text-align: center;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .icon {
@@ -152,17 +175,20 @@ h6 .info{
     max-height:20px;
     border-radius: 45px;
     text-align: center;
-    margin-right:0px;
+    margin-right:0;
   }
 
-#filters .word{
+.filters .word{
     margin:2px;
-    margin-right:12px;
+    margin-right:14px;
+    margin-left: 6px;
 }
 
-#filters>div:hover {
-    color:#DEEBFF;
+.filters>div:hover {
+    color:#0065FC;
+    text-shadow:2px 1px 5px#dce5f3;
     border-color: #0065FC;
+    box-shadow:-1px -1px 10px #dce5f3;
 }
 
 main{
@@ -171,35 +197,41 @@ main{
     flex-flow:row wrap;
     justify-content: space-between;
 }
-
+.heber_header, .heber_footer{
+    padding-left: 4%;
+}
+.heber_header h4{
+    
+}
 .heber{
     width:58%;
     height:auto;
     border-radius: 15px;
     background-color: #F2F2F2;
     display:flex;
-    flex-flow:column wrap;
-    padding-left:2%;
+    flex-flow:column nowrap;
+    justify-content: space-between;
 }
 
 .card_holder{
     max-width:100%;
-    height:280px;
+    height:320px;
     display:flex;
     flex-flow:row wrap;
-    align-content:flex-start;
+    align-content:stretch;
     justify-content:space-evenly;
 }
+
 .card{
-    max-width:25%;
-    max-height:40%;
+    max-width:28%;
+    max-height:42%;
     display: flex;
     flex-flow:column nowrap;
     border:3px solid white;
     border-radius: 15px;
     background: white;
     box-shadow: 2px 2px 10px rgb(199, 195, 195);
-    margin:2%;
+    margin:5px;
 }
 
 .img_holder{
@@ -215,8 +247,9 @@ main{
     height: 100%;
     object-fit: cover;
 }
+
 .legend_holder{
-    width: 100%;
+    width: 94%;
     height: 40%;
     font-size: 60%;
     padding-left:5%;
@@ -225,20 +258,19 @@ main{
     flex-flow: column nowrap;
     justify-content: space-evenly;
 }
+
 .legend_holder p{
     margin:0;
-    margin-top:5px;
+    line-height: 14px;
+    margin-top:4px;
+    margin-bottom: 1px;
 }
+
 .rating{
-    margin-bottom:5px;
+    margin-bottom:3px;
 }
-.blue{
-    color:#0065FC;
-}
-.grey{
-    color:grey;
-}
-.heber a{
+
+.heber_footer a{
     text-decoration: none;
     color:black;
 
@@ -284,7 +316,7 @@ main{
 }
 
 .pop_img_holder{
-    max-width:40%;
+    max-width:100%;
     height:100px;
     overflow:hidden;
     border-top-left-radius: 15px;
@@ -298,7 +330,7 @@ main{
 }
 
 .pop_leg_holder{
-    width: 100%;
+    width: 80%;
     height: 100%;
     font-size: 60%;
     padding-left:5%;
@@ -339,6 +371,12 @@ main{
     border-radius: 15px;
     box-shadow: 2px 2px 10px rgb(199, 195, 195);2px 2px 10px rgb(199, 195, 195);
     margin:6px;
+}
+.act_card:hover{
+    box-shadow:-1px -1px 20px #dce5f3;
+    opacity: 0.8;
+    background:linear-gradient(#dce5f3,white);
+    padding:1px;
 }
 
 .act_card:nth-child(2), .act_card:nth-child(3),.act_card:nth-child(5),.act_card:nth-child(6){
@@ -464,7 +502,7 @@ footer a{
     }
     main{
         display:flex;
-        flex-flow:column wrap;
+        flex-flow:column reverse;
     }
     #search_but{
         display:none;
@@ -504,7 +542,7 @@ footer a{
 
 .B22{
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .B18{
@@ -522,11 +560,38 @@ footer a{
     font-size: 10px;
 }
 .L16{
-    font-weight: 200;
-    font-size: 11pt;
+    font-weight: 300;
+    font-size: 10pt;
 }
 
 .L14{
-    font-weight: 200;
+    font-weight: 300;
     font-size: 8pt;
+}
+
+.blue{
+    color:#0065FC;
+}
+.grey{
+    color:#F2F2F2;
+}
+
+.line{
+    line-height:5px;
+    padding-bottom:5px;
+}
+
+@media screen and (min-width: 993px){
+    body{
+        margin-left:2%;
+        margin-right:2%;
+    }
+    
+}
+@media screen and (min-width: 1204px)
+{
+    body{
+        margin-left:10%;
+        margin-right: 10%;
+    }
 }

@@ -306,12 +306,12 @@ main{
     display: flex;
     flex-flow:row nowrap;
     justify-content:space-between;
-    align-items: center;
+    align-items:center;
     width: 100%;
 }
 
 .head_h4{
-    padding-top:10px;
+    padding-top:30px;
     margin-bottom:0%;
     font-size: 11pt;
 }
@@ -333,25 +333,27 @@ main{
     margin-top:4%;
     margin-bottom:4%;
     background: white;
+    height:100px;
 }
 
 .pop_img_holder{
-    width:40%;
-    height:100px;
-    overflow:hidden;
+    width:45%;
+    height:100%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    overflow:hidden;
+
 }
 
 .pop_card img{
     width:100%;
     height:100%;
-    object-fit: cover;
+    object-fit:cover;
 }
 
 .pop_leg_holder{
-    width: 80%;
-    height: 100%;
+    width: 70%;
+    height: 99%;
     font-size: 8pt;
     display: flex;
     padding-left:4%;
@@ -364,7 +366,8 @@ main{
 }
 
 .words_pop{
-    width:70%;
+    width:85%;
+    height:100%;
     font-size:9pt;
     line-height:15px;
 }
@@ -624,18 +627,18 @@ footer a{
     line-height:5px;
     padding-bottom:5px;
 }
-
+/*
 @media screen and (min-width: 993px){
     header, .main_container{
         margin-left:2%;
         margin-right:2%;
     }
     
-}
+}*/
 @media screen and (min-width: 1204px)
 {
     header, .main_container{
-        margin-left:20%;
-        margin-right: 20%;
+        margin-left:15%;
+        margin-right: 15%;
     }
 }

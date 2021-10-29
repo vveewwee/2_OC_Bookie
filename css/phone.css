@@ -155,8 +155,8 @@ input{
 }
 
 .fil{
-    margin-left:15px;
-    margin-bottom:10px;
+    margin-left:2%;
+    margin-bottom:2%;
     height:40px;
     border:1px solid #ccc8c8;
     border-radius: 50px;
@@ -173,8 +173,8 @@ input{
 
 .filters h4{
     border:0px;
-    margin-top:25px;
-    margin-left: 15px;
+    margin-top:2%;
+    margin-left: 2%;
 }
 
 .info{

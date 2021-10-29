@@ -58,17 +58,12 @@ nav{
     border-top:0px;
 }
 
-.inside_nav:hover{
-    border-top: 2px solid #0065FC;
-    color: #0065FC;
-}
 .inside_nav a:hover{
     color:#0065FC;
 }
 
 .main_container{
-    margin-left:2%;
-    margin-right:2%;
+    width:100%;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -86,6 +81,7 @@ nav{
     flex-flow:column wrap;
     align-items:center;
 }
+
 .line h3{
 text-align:justify;
 }
@@ -159,6 +155,7 @@ border-left:0px;
 display:flex;
 flex-flow: row nowrap;
 justify-content: flex-start;
+align-items:center;
 }
 
 .word{
@@ -184,14 +181,14 @@ margin-right: 10px;
 }
 
 .icon {
-padding: 15px;
-color:#0065FC;
-background:hsl(216, 100%, 94%);
-max-width: 20px;
-max-height:20px;
-border-radius: 45px;
-text-align: center;
-margin-right:0;
+    width: 20px;
+    height:20px;
+    padding: 15px;
+    color:#0065FC;
+    background:hsl(216, 100%, 94%);
+    border-radius: 45px;
+    text-align: center;
+    margin-right:0;
 }
 
 .information{
@@ -251,7 +248,9 @@ main{
     display:flex;
     flex-flow:column nowrap;
     align-items: center;
+    width:100%;
 }
+
 .heber{
     width:90%;
     height:500px;
@@ -266,6 +265,13 @@ main{
     text-decoration: none;
     color:black;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.horizontal_a{
+    display: flex;
+    flex-flow:row nowrap;
 }
 
 .heber_header, .heber_footer{
@@ -475,7 +481,6 @@ main{
     box-shadow:-1px -1px 20px #dce5f3;
     opacity: 0.8;
     background:linear-gradient(#dce5f3,white);
-    padding:1px;
 }
 
 .act_card:nth-child(1), .act_card:nth-child(4),.act_card:nth-child(5){
@@ -583,140 +588,3 @@ footer a{
     line-height:5px;
     padding-bottom:5px;
 }
-/*
-@media screen and (min-width: 320px) and (max-width: 768px){
-    body{
-        margin:0;
-    }
-
-    body>*{
-        align-content: center;
-        display: flex;
-        flex-flow: row wrap;
-    }
-    #header{
-        max-width:100%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        margin:0%;
-        padding:0%;
-    }
-
-    .logo{
-        text-align: center;
-        padding-left:0;
-    }
-
-   .nav{
-        width: 100%;
-        display:flex;
-        flex-flow:column nowrap;
-   }
-   
-    .inside_nav{
-        width:100%;
-        align-items:center;
-        border-top:0px;
-        border-bottom: 2px solid #F2F2F2;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-    }
-    nav a{
-        text-align: center;;
-        font-size:18px;
-        padding-left:5%;
-    }
-    .inside_nav:hover{
-        border-bottom:2px solid #0065FC;
-        border-top:0px;
-    }
-    .main_container{
-        margin-left:5%;
-        margin-right:5%;
-        display:flex;
-        flex-flow:column wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .main_container > *{
-        display: flex;
-        flex-flow:column wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #search_but{
-        display:none;
-    }
-    .hidden{
-        display:initial;
-    }
-    #recherche{
-        display: flex;
-        flex-flow: row nowrap;
-        width:80%;
-        
-    }
-    #hidden_but{
-        height: 34px;
-        width:34px;
-        align-items: center;
-        text-align: center;
-        background-color: #0065FC;
-        border-color: #0065FC;
-        border-radius: 10px;
-        border-style: solid;
-        margin-left:-15px;
-    }
-    #hidden_but i{
-        color: white;
-        background: #0065FC;
-        
-    }
-    main{
-        display:flex;
-        flex-flow:column wrap-reverse;
-        justify-content: center;
-
-    }
-    .pop{
-        order:1;
-    }
-    .heber{
-        display: flex;
-        flex-flow:column wrap;
-    }
-    .card_holder{
-        height:auto;
-        flex-flow:column wrap;
-        justify-content: space-around;
-        align-items: center;
-        width:100%;
-    }
-}
-
-
-
-
-@media screen and (min-width:786px) and (max-width:992px)
-{
-    tablette
-}
-
-
-
-
-@media screen and (min-width: 1404px)
-{
-    body{
-        margin-left:auto;
-        margin-right:auto;
-    }
-    footer{
-        margin-left:0px;
-        margin-right:0px;
-    }
-}*/

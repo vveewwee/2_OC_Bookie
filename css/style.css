@@ -129,15 +129,15 @@ input{
 
 .fil{
     margin-left:2%;
-    margin-bottom:2%;
+    margin-top:2%;
     height:40px;
     border:1px solid #ccc8c8;
     border-radius: 50px;
     border-left:0px;
-    display:flex;
+    display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items:center;
 }
 
 .filters h4{

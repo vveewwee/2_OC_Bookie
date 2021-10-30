@@ -229,7 +229,7 @@ margin-right: 10px;
     margin-left: 6px;
 }
 
-.filters>div:hover {
+.fil:hover {
     color:#0065FC;
     text-shadow:2px 1px 5px#dce5f3;
     border-color: #0065FC;

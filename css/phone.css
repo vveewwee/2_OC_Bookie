@@ -200,6 +200,13 @@ input{
     margin-right:0;
   }
 
+  .fil:hover {
+    color:#0065FC;
+    text-shadow:2px 1px 5px#dce5f3;
+    border-color: #0065FC;
+    box-shadow:-1px -1px 10px #dce5f3;
+}
+
   .information{
       display: flex;
       flex-flow:row nowrap;

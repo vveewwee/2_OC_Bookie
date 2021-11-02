@@ -4,10 +4,6 @@ body{
     font-family: Raleway;
     margin:0;
 }
-/*
-div{
-    border: 1px solid black;
-}*/
 
 #header{
     width:100%;
@@ -99,15 +95,16 @@ margin-top:0px;
 }
 
 .loc{
-display:flex;
-justify-content:center;
-align-items:center;
-background:#F2F2F2;
-border-top-left-radius: 15px;
-border-bottom-left-radius: 15px;
-width:50px;
-height:50px;
-outline: 1px solid #F2F2F2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-size:10pt;
+    width:50px;
+    height:50px;
+    outline: 1px solid #F2F2F2;
 }
 
 input{
@@ -115,8 +112,8 @@ input{
     padding-top:1px;
     border-style: none;
     outline:1px solid #F2F2F2;
-    width:55vmin;
-    font-size: 9pt;
+    width:200px;
+    font-size: 12pt;
 }
 
 .hidden{
@@ -126,69 +123,42 @@ input{
 #search_but{
     width:95px;
     height: 50px;
-    font-size: 9pt;
+    font-size: 12pt;
     font-weight: 300;
     background-color: #0065FC;
     color:white;
     margin-left:-5px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     border:none;
 }
 
 .filters{
-display:flex;
-flex-flow:row wrap;
+    display:flex;
+    flex-flow:row wrap;
+    width:100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .filter_word{
-width:100%;
+    width:100%;
+    text-align: center;
+}
+
+.filter_word h4{
 }
 
 .fil{
     margin-left:2%;
-    margin-bottom:2%;
-    height:40px;
+    margin-top:2%;
+    max-height:40px;
     border:1px solid #ccc8c8;
     border-radius: 50px;
     border-left:0px;
-    display:flex;
+    display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.word{
-padding:15px;
-}
-
-.filters h4{
-border:0px;
-margin-top:25px;
-margin-left: 15px;
-}
-
-.info{
-color:#0065FC;
-border: 1px solid #F2F2F2;
-border-radius: 50px;
-width:10px;
-height: 10px;
-padding:5px;
-text-align: center;
-line-height: 1px;
-margin-right: 10px;
-}
-
-.icon {
-    padding: 15px;
-    color:#0065FC;
-    background:hsl(216, 100%, 94%);
-    max-width: 20px;
-    max-height:20px;
-    border-radius: 45px;
-    text-align: center;
-    margin-right:0;
+    align-items:center;
 }
 
 .information{
@@ -197,27 +167,25 @@ margin-right: 10px;
     justify-content: flex-start;
     align-items: center;
     text-align: left;
-    margin-bottom: 2%;
-    margin-top: 2%;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .info{
     color:#0065FC;
     border: 1px solid #F2F2F2;
-    border-radius: 30px;
-    width:10px;
-    height: 10x;
-    padding:3px;
+    border-radius: 50px;
+    width:14px;
+    padding:6px;
     text-align: center;
     margin-right: 10px;
 }
 
 .icon {
-    padding: 10px;
+    padding: 10pt;
+    font-size: 12pt;
     color:#0065FC;
     background:hsl(216, 100%, 94%);
-    max-width: 20px;
-    max-height:20px;
     border-radius: 45px;
     text-align: center;
     margin-right:0;
@@ -231,9 +199,12 @@ margin-right: 10px;
 
 .fil:hover {
     color:#0065FC;
-    text-shadow:2px 1px 5px#dce5f3;
     border-color: #0065FC;
-    box-shadow:-1px -1px 10px #dce5f3;
+}
+
+.fil:hover .icon{
+    color:hsl(216, 100%, 94%);
+    background-color: #0065FC;
 }
 
 main{
@@ -299,8 +270,6 @@ main{
     margin:0;
 }
 
-
-
 .card_holder{
     max-width:100%;
     height:70%;
@@ -321,19 +290,10 @@ main{
     box-shadow: 2px 2px 10px rgb(199, 195, 195);
 }
 
-.card:nth-child(4) .img_holder{
-    height: 100%;
-}
-.card:nth-child(5) .legend_holder{
-    height:20%;
-}
-.card:nth-child(6) .img_holder {
-    height: 100%;
-}
 
 .img_holder{
-    max-width:100%;
-    max-height:65%;
+    width:100%;
+    height:60%;
     overflow:hidden;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -347,16 +307,32 @@ main{
 
 .legend_holder{
     width: 94%;
-    font-size: 8pt;
+    height: 35%;
     padding-left:5%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
-.legend_holder p{
+.leg_word_hold{
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: space-evenly;
+    width:100%;
+    height:95%;
+    font-size: 9pt;
+}
+
+.leg_word_hold p{
     margin:0;
-    line-height: 16px;
+    line-height: 18px;
+}
+
+.rating{
+    width: 100%;
+    height:10%;
+    font-size: 9pt;
+    margin-bottom:3px;
 }
 
 .heber_footer a{
@@ -443,7 +419,6 @@ main{
 
 .words_pop{
     width:85%;
-    height:100%;
     font-size:9pt;
     line-height:15px;
 }
@@ -462,14 +437,13 @@ main{
     display:flex;
     flex-flow: row wrap;
     width:100%;
-    height:450px;
 }
 
 .act_card{
     display: flex;
     flex-flow:row wrap;
     align-self:flex-start;
-    height:40%;
+    height:180px;
     border-radius: 15px;
     box-shadow: 2px 2px 10px rgb(199, 195, 195);2px 2px 10px rgb(199, 195, 195);
     font-size:9pt;
@@ -493,7 +467,7 @@ main{
 
 .act_img_holder{
     width:100%;
-    height:85%;
+    height:80%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     overflow:hidden;
@@ -506,7 +480,6 @@ main{
 }
 
 .act_leg>a{
-    
     margin-left:15px;
     text-decoration: none;
     color:black;
@@ -545,36 +518,28 @@ footer a{
     margin-bottom:10px;
 }
 
-.B22{
+.BL{
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20pt;
 }
 
-.B9{
+.BM{
     font-weight: 500;
-    font-size: 9pt;
+    font-size: 17pt;
 }
 
-.B16{
-    font-weight: 500;
-    font-size: 14px;
+.BS{
+    font-weight: 600;
+    font-size: 14pt;
 }
 
-.B14{
-    font-weight: 500;
-    font-size: 10px;
-}
-.L16{
+.RL{
     font-weight: 300;
-    font-size: 10pt;
+    font-size: 15pt;
 }
-.L9{
-    font-weight:300;
-    font-size:9pt;
-}
-.L14{
+.RM{
     font-weight: 300;
-    font-size: 8pt;
+    font-size: 13pt;
 }
 
 .blue{

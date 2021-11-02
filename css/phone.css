@@ -171,48 +171,45 @@ input{
     padding:15px;
 }
 
-.filters h4{
-    border:0px;
-    margin-top:2%;
-    margin-left: 2%;
-}
-
 .info{
     color:#0065FC;
     border: 1px solid #F2F2F2;
     border-radius: 50px;
-    width:10px;
-    height: 10px;
-    padding:5px;
+    width:14px;
+    padding:6px;
     text-align: center;
-    line-height: 1px;
     margin-right: 10px;
 }
 
 .icon {
-    padding: 15px;
+    padding: 10pt;
+    font-size: 12pt;
     color:#0065FC;
     background:hsl(216, 100%, 94%);
-    max-width: 20px;
-    max-height:20px;
     border-radius: 45px;
     text-align: center;
     margin-right:0;
   }
 
+
   .fil:hover {
     color:#0065FC;
-    text-shadow:2px 1px 5px#dce5f3;
     border-color: #0065FC;
-    box-shadow:-1px -1px 10px #dce5f3;
 }
 
-  .information{
-      display: flex;
-      flex-flow:row nowrap;
-      align-items: center;
+.fil:hover .icon{
+    color:hsl(216, 100%, 94%);
+    background-color: #0065FC;
+}
 
-  }
+.information{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 3%;
+}
 
 .img_holder{
     max-width:100%;
@@ -313,7 +310,6 @@ main{
 
 .words_pop{
     width:85%;
-    height:100%;
     font-size:9pt;
     line-height:15px;
 }
@@ -378,20 +374,35 @@ main{
 }
 
 
+
 .legend_holder{
     width: 94%;
-    font-size: 8pt;
+    height: 35%;
     padding-left:5%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
-.legend_holder p{
+.leg_word_hold{
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: space-evenly;
+    width:100%;
+    height:95%;
+    font-size: 9pt;
+}
+
+.leg_word_hold p{
     margin:0;
-    line-height: 16px;
-   /* margin-top:4px;
-    margin-bottom: 1px;*/
+    line-height: 18px;
+}
+
+.rating{
+    width: 100%;
+    height:10%;
+    font-size: 9pt;
+    margin-bottom:3px;
 }
 
 #act{
@@ -407,18 +418,17 @@ main{
     display:flex;
     flex-flow: column nowrap;
     width:100%;
-/*  height: 370px; */
     align-items: center;
+    margin-bottom: 10%;
 }
 
 .act_card{
     display: flex;
     flex-flow: column nowrap;
     width:90%;
-    max-height:200px;
     border-radius: 15px;
     box-shadow: 2px 2px 10px rgb(199, 195, 195);2px 2px 10px rgb(199, 195, 195);
-    margin:6px;
+    margin:4%;
 }
 
 .act_card:hover{
@@ -434,13 +444,15 @@ main{
 }
 
 .act_img_holder{
+    height:130px;
+    width:100%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     overflow:hidden;
 }
 
 .act_leg{
-    height:30px;
+    height:20px;
     margin:4%;
     width:100%;
 }
@@ -450,8 +462,6 @@ main{
     color:black;
 }
 
-
-
 footer{
     background-color: #f2f2f2;
     
@@ -459,18 +469,16 @@ footer{
 
 .foot{
     width:100%;
-    height:350px;
     display:flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
-    padding-right:100px;
-    padding-left:4%;
-    padding-top: 4%;
+    padding-left:5%;
+    padding-top: 10%;
 }
 
 .foot_col{
     width:90%;
-    height: 100px;
+    height: 180px;
     display:flex;
     flex-flow: column nowrap;
     align-items: flex-start;
@@ -486,36 +494,28 @@ footer a{
     margin-bottom:10px;
 }
 
-.B22{
+.BL{
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18pt;
 }
 
-.B9{
-    font-weight: 500;
-    font-size: 9pt;
+.BM{
+    font-weight: 600;
+    font-size: 16pt;
 }
 
-.B16{
-    font-weight: 500;
-    font-size: 14px;
+.BS{
+    font-weight: 600;
+    font-size: 14pt;
 }
 
-.B14{
-    font-weight: 500;
-    font-size: 10px;
-}
-.L16{
+.RL{
     font-weight: 300;
-    font-size: 10pt;
+    font-size: 14pt;
 }
-.L9{
-    font-weight:300;
-    font-size:9pt;
-}
-.L14{
+.RM{
     font-weight: 300;
-    font-size: 8pt;
+    font-size: 12pt;
 }
 
 .blue{

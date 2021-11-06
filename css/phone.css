@@ -85,7 +85,7 @@ nav{
         align-items:center;
 }
 .line h3{
-    text-align:justify;
+    text-align:center;
 }
 
 .line p{
@@ -118,7 +118,7 @@ input{
         border-style: none;
         outline:1px solid #F2F2F2;
         width:55vmin;
-        font-size: 9pt;
+        font-size: 12pt;
 }
 
 #search_but{
@@ -242,6 +242,7 @@ main{
         flex-flow: column wrap;
         align-items: center;
         justify-content: center;
+        padding-bottom: 4%;
 }
 
 .pop_header{
@@ -261,6 +262,7 @@ main{
 
 .pop_card_holder{
     width:100%;
+    max-width: 580px;
     display: flex;
     flex-flow: column nowrap;
     align-items: stretch;
@@ -288,12 +290,6 @@ main{
 
 }
 
-.pop_card img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
 .pop_leg_holder{
     width: 70%;
     height: 99%;
@@ -317,7 +313,6 @@ main{
 .heber{
         display: flex;
         flex-flow:column wrap;
-        
 }
 
 .hide_a{
@@ -349,7 +344,6 @@ main{
     justify-content: space-around;
     align-items: center;
     width:100%;
-   
 }
 
 .card{
@@ -502,6 +496,10 @@ footer a{
 .BM{
     font-weight: 600;
     font-size: 16pt;
+}
+.BMS{
+    font-weight: 500;
+    font-size: 12pt;
 }
 
 .BS{

@@ -54,7 +54,7 @@ nav{
     border-top:0px;
 }
 
-.inside_nav a:hover{
+.inside_nav:hover a{
     color:#0065FC;
 }
 
@@ -79,7 +79,7 @@ nav{
 }
 
 .line h3{
-text-align:justify;
+text-align:center;
 }
 
 .line p{
@@ -136,6 +136,7 @@ input{
 .filters{
     display:flex;
     flex-flow:row wrap;
+    justify-content: center;
     width:100%;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -147,8 +148,9 @@ input{
 }
 
 .filter_word h4{
+    margin-top:1%;
+    margin-bottom:0;
 }
-
 .fil{
     margin-left:2%;
     margin-top:2%;

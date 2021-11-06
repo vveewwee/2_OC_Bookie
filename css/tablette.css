@@ -209,7 +209,7 @@ input{
     background-color: #0065FC;
 }
 
-main{
+.main_section{
     width:100%;
     display: flex;
     flex-flow:column nowrap;
@@ -425,7 +425,7 @@ main{
     line-height:15px;
 }
 
-#act{
+.act{
     width:90%;
     height:730px;
     display: flex;
@@ -527,9 +527,12 @@ footer a{
 
 .BM{
     font-weight: 500;
+    font-size: 15pt;
+}
+.BBM{
+    font-weight:500;
     font-size: 17pt;
 }
-
 .BS{
     font-weight: 600;
     font-size: 14pt;

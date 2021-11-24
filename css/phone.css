@@ -422,7 +422,7 @@ input{
     flex-flow: column nowrap;
     width:90%;
     border-radius: 15px;
-    box-shadow: 2px 2px 10px rgb(199, 195, 195);2px 2px 10px rgb(199, 195, 195);
+    box-shadow: 2px 2px 10px rgb(199, 195, 195);
     margin:4%;
 }
 
@@ -536,11 +536,11 @@ footer a{
     .leg_word_hold{
         font-size:13pt;
     }
-
+/*
     .img_holder{
         height:;
     }
-
+*/
     .pop_card_holder{
         max-width:600px;
     }
